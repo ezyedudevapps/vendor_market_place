@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Seperate_course_activity">
+
+  <TextView
+    android:id="@+id/my_crs_txt"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+    android:text="My Course"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:textSize="17sp"
+    android:background="@color/orange_500"
+    android:textAlignment="center"
+    android:padding="8dp"
+    />
+
+  <com.smarteist.autoimageslider.SliderView
+      android:layout_below="@id/my_crs_txt"
+      android:id="@+id/slider_view"
+      android:layout_width="match_parent"
+      android:layout_height="250dp"
+      app:sliderScrollTimeInSec="3"
+      app:sliderStartAutoCycle="true"
+      android:layout_marginTop="15sp"
+      android:layout_marginStart="10dp"
+      android:layout_marginEnd="10dp"
+      app:sliderAutoCycleDirection="back_and_forth"
+      app:sliderIndicatorPadding="4dp"
+      app:sliderIndicatorRadius="1.5dp"
+      app:sliderIndicatorSelectedColor="@color/orange_300"
+      app:sliderIndicatorUnselectedColor="@color/black"
+      app:sliderAnimationDuration="1000"
+      app:sliderIndicatorOrientation="horizontal"
+      app:sliderIndicatorGravity="center_horizontal|bottom"
+    />
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/course_seperate_recyc"
+      android:layout_below="@+id/slider_view"
+      android:layout_marginTop="10dp"
+      />
+
+</RelativeLayout>

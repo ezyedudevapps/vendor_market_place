@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_sign_background"
+    tools:context=".Login_SignUp_page">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_ezyedu_text_logo"
+        android:layout_above="@id/a1"
+        />
+    <TextView
+        android:id="@+id/a1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Welcome to EzyEdu"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/sign_in_btn"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:text="Sign in"
+        android:layout_below="@id/a1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@drawable/ezy_oval"
+
+        />
+    <Button
+        android:id="@+id/sign_up_btn"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:text="Sign Up"
+        android:padding="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/sign_in_btn"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/orange_new_oval"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

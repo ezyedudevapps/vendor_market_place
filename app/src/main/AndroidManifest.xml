@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ezyedu.vendor">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".App.FaceExercises"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Create_vendor_group"></activity>
+        <activity android:name=".Create_Institution_map" />
+        <activity android:name=".Add_Events_Activity" />
+        <activity android:name=".Add_Event_Activity" />
+        <activity android:name=".Events_Activity" />
+        <activity android:name=".Analytics_Activity" />
+        <activity android:name=".Seperate_Feeds" />
+        <activity android:name=".Add_Feeds_Activity" />
+        <activity android:name=".My_Feeds_Activity" />
+        <activity android:name=".Cat_Activity_new" />
+        <activity android:name=".Map_dragger_activity" />
+        <activity android:name=".Change_password" />
+        <activity android:name=".Terms_Conditions_Activity" />
+        <activity android:name=".Privacy_policy_activity" />
+        <activity android:name=".Settings_Activity" />
+        <activity android:name=".Search_Connections" />
+        <activity android:name=".Connection_Actiivity" />
+        <activity android:name=".Course_All_Reviews" />
+        <activity android:name=".Reviews_Page" />
+        <activity android:name=".ChatAtivity" />
+        <activity android:name=".gmail_register" />
+        <activity android:name=".facebook_Register" />
+        <activity android:name=".Reset_Password" />
+        <activity android:name=".Forgot_password" />
+        <activity android:name=".Create_institution_form" />
+        <activity android:name=".Create_institution" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity android:name=".Edit_bank_details" />
+        <activity android:name=".Add_bank_account" />
+        <activity android:name=".Bank_Account_Activity" />
+        <activity android:name=".Edit_course_Activity" />
+        <activity android:name=".Seperate_course_activity" />
+        <activity android:name=".Courses_Activity" />
+        <activity android:name=".Add_Course_Activity" />
+        <activity android:name=".Preview_Page" />
+        <activity android:name=".Edit_Users_profile" />
+        <activity android:name=".Order_Info_Page" />
+        <activity android:name=".Sales_activity" />
+        <activity android:name=".Add_Bannner_Activity" />
+        <activity android:name=".Edit_profile_activity" />
+        <activity android:name=".Payment_activity" />
+        <activity android:name=".Activate_Account" />
+        <activity android:name=".Signup_page" />
+        <activity android:name=".Login_page" />
+        <activity android:name=".Login_SignUp_page" />
+        <activity android:name=".FeedsActivity" />
+        <activity android:name=".MessageActivity" />
+        <activity android:name=".Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

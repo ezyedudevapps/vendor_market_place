@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">EzyEdu BiZ</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Select">Select Item</string>
+    <string name="map_key" translatable="false">AIzaSyAZJKSrRa6CumGTjGSdX1uzooKrVQ6yA-M</string>
+
+
+    <string name="facebook_app_id">999143940639895</string>
+    <string name="fb_login_protocol_scheme">fb999143940639895</string>
+    <string name="search_for_connections">Search For Connections</string>
+
+</resources>

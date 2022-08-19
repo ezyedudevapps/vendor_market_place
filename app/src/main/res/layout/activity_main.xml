@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include
+        layout="@layout/main_toolbar"/>
+
+
+    <RelativeLayout
+        android:id="@+id/relative_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_logo"
+            android:layout_width="90sp"
+            android:layout_height="90sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:elevation="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tittle_vendor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_logo"
+            android:layout_marginTop="25sp"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="10dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:maxLines="1"
+            />
+        <TextView
+            android:id="@+id/preview_vendor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tittle_vendor"
+            android:layout_toRightOf="@id/img_logo"
+            android:text="See your page preview >"
+            android:layout_marginTop="5sp"
+            android:layout_marginStart="20sp"
+            android:textSize="15sp"
+            android:textColor="@color/orange_500"
+            android:textStyle="normal"
+            />
+
+        <ImageView
+            android:id="@+id/settings_vendor"
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="33dp"
+            android:src="@drawable/ic_menu_settings"
+            android:layout_marginEnd="25sp"
+            />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:background="@color/grey_500"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyc_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+
+        />
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        >
+
+        <include
+            layout="@layout/main_nav_drawer"
+            />
+
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

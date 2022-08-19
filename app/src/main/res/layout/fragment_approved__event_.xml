@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Approved_Event_Fragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/ttl_events_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/course_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Events : "
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="20sp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+            <Button
+                android:id="@+id/add_prod"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="+ ADD"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="15dp"
+                android:textColor="@color/orange_500"
+                android:textStyle="bold"
+                android:background="@drawable/white_oval"
+                />
+
+        </RelativeLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/approved_event_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <ImageView
+            android:id="@+id/i11"
+            android:layout_width="190sp"
+            android:visibility="gone"
+            android:layout_height="190sp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/empty_history"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/t11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Approved Events"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>

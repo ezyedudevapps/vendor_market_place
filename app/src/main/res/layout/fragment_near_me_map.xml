@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.NearMeMapFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp"
+        >
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/google_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            />
+
+        <ImageView
+            android:id="@+id/drag_mark"
+            android:layout_width="70dp"
+            android:layout_height="90dp"
+            android:src="@drawable/orange_marker"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15sp"
+            android:layout_marginBottom="25sp"
+            android:padding="8dp"
+            />
+
+        <Button
+            android:id="@+id/search_ven_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20sp"
+            android:textColor="@color/com_facebook_blue"
+            android:text="Confirm"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/white_oval"
+            />
+        <ImageView
+            android:id="@+id/my_loc_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/my_location_new"
+            android:layout_above="@id/search_ven_map"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15sp"
+            android:visibility="visible"
+            />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120sp"
+        android:background="@drawable/white_oval"
+        android:layout_margin="10sp"
+        android:elevation="4sp"
+        >
+
+        <ImageView
+            android:id="@+id/course_img"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10sp"
+            />
+        <TextView
+            android:id="@+id/c_t"
+            android:layout_width="match_parent"
+            android:layout_height="22sp"
+            android:layout_toRightOf="@id/course_img"
+            android:layout_marginTop="25sp"
+            android:layout_marginStart="10sp"
+            android:layout_marginEnd="10sp"
+            android:text="Python 101"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/c_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/c_t"
+            android:layout_toRightOf="@id/course_img"
+            android:text="Qty"
+            android:textSize="15sp"
+            android:layout_marginStart="10sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="5sp"
+            />
+        <TextView
+            android:id="@+id/prc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/c_t"
+            android:layout_toRightOf="@id/c_qty"
+            android:text="Price"
+            android:textSize="16sp"
+            android:layout_marginStart="15sp"
+            android:textColor="@color/orange_500"
+            android:textStyle="bold"
+            android:layout_marginTop="5sp"
+            />
+
+
+<TextView
+    android:id="@+id/description"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/course_img"
+    android:text="Description"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+/>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

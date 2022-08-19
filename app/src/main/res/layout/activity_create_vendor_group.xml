@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Create_vendor_group"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Vendor Group"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:background="@color/orange_500"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        />
+    <EditText
+        android:id="@+id/get_ven_grp_nm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:hint="Enter your group name..."
+        android:layout_marginTop="10sp"
+        android:layout_marginStart="5sp"
+        android:layout_marginEnd="5sp"
+        />
+    <TextView
+        android:id="@+id/bank_name_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tittle_get"
+        android:text="Vendor Category"
+        android:layout_marginStart="10dp"
+        android:textSize="17sp"
+        android:layout_marginTop="10sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/txt_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Here"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="20dp"
+        android:layout_marginTop="10sp"
+        android:layout_below="@id/bank_name_txt"
+        android:padding="10dp"
+        android:drawableEnd="@drawable/drop_down_icon"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/sub_cat_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tittle_get"
+        android:text="Vendor Sub-Category"
+        android:layout_marginStart="10dp"
+        android:textSize="17sp"
+        android:layout_marginTop="10sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/sub_categories_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Here"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="20dp"
+        android:layout_marginTop="10sp"
+        android:layout_below="@id/bank_name_txt"
+        android:padding="10dp"
+        android:drawableEnd="@drawable/drop_down_icon"
+        android:layout_marginBottom="10dp"
+        />
+
+    <Button
+        android:id="@+id/create_ven"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Create"
+        android:layout_gravity="center"
+        android:background="@color/orange_500"
+        android:textColor="@color/white"
+    android:layout_marginTop="10sp"
+        android:textSize="17sp"
+        android:padding="8dp"
+        />
+
+
+</LinearLayout>

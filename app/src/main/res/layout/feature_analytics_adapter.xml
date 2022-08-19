@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:weightSum="2">
+
+        <!--PAGE VIEW-->
+        <LinearLayout style="@style/AnalyticsPage.ItemLayout">
+            <TextView style="@style/AnalyticsPage.ItemTitle"
+                android:textColor="@color/black"
+                android:text="Page views"
+                android:textSize="18sp"/>
+            <TextView style="@style/AnalyticsPage.ItemValue"
+                android:id="@+id/total_page_view"
+                android:textSize="42sp"
+                tools:text="746"/>
+        </LinearLayout>
+
+        <!--EVENTS VIEW-->
+        <LinearLayout style="@style/AnalyticsPage.ItemLayout">
+            <TextView style="@style/AnalyticsPage.ItemTitle"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="Event views"/>
+            <TextView style="@style/AnalyticsPage.ItemValue"
+                android:id="@+id/events_txt"
+                android:textSize="42sp"
+                tools:text="746"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <!-- #2nd ROW -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <!--IDEAS VIEW-->
+        <LinearLayout style="@style/AnalyticsPage.ItemLayout">
+            <TextView style="@style/AnalyticsPage.ItemTitle"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="Idea views"/>
+            <TextView style="@style/AnalyticsPage.ItemValue"
+                android:id="@+id/ideas_txt"
+                android:textSize="42sp"
+                tools:text="746"/>
+        </LinearLayout>
+
+        <!--PAGES SAVED-->
+        <LinearLayout style="@style/AnalyticsPage.ItemLayout">
+            <TextView style="@style/AnalyticsPage.ItemTitle"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="Page saved"/>
+            <TextView style="@style/AnalyticsPage.ItemValue"
+                android:id="@+id/total_view_txt"
+                android:textSize="42sp"
+                tools:text="746"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!-- #3rd ROW -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <!--PEOPLE MESSAGE-->
+        <LinearLayout style="@style/AnalyticsPage.ItemLayout">
+            <TextView style="@style/AnalyticsPage.ItemTitle"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="Messages"/>
+            <TextView style="@style/AnalyticsPage.ItemValue"
+                android:id="@+id/message_txt"
+                android:textSize="42sp"
+                tools:text="746"/>
+        </LinearLayout>
+
+        <!--IDEAS SAVED-->
+        <LinearLayout style="@style/AnalyticsPage.ItemLayout">
+            <TextView style="@style/AnalyticsPage.ItemTitle"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="Ideas saved"/>
+            <TextView style="@style/AnalyticsPage.ItemValue"
+                android:id="@+id/ideas_save_txt"
+                android:textSize="42sp"
+                tools:text="746"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

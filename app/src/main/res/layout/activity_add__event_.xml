@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Add_Event_Activity">
+
+
+    <TextView
+        android:id="@+id/addd_course_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD EVENTS"
+        android:textAlignment="center"
+        android:padding="6dp"
+        android:textStyle="bold"
+        android:textColor="@color/orange_500"
+        android:textSize="17sp"
+        android:layout_marginTop="5dp"
+        />
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/black"
+        android:layout_below="@+id/addd_course_txt"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/c_im_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Event Image"
+                android:layout_marginStart="10dp"
+                android:textSize="17sp"
+                />
+            <RelativeLayout
+                android:id="@+id/add_img"
+                android:layout_width="65dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="17sp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/white_oval"
+                android:layout_marginBottom="15dp"
+                android:elevation="3dp"
+                >
+                <ImageView
+                    android:id="@+id/add_course_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/gpk"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tittle"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="17sp"
+                />
+
+            <EditText
+                android:id="@+id/tittle_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:layout_marginStart="10dp"
+                android:textSize="17sp"
+                />
+            <EditText
+                android:id="@+id/description_event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sl_line"
+                android:text="Select Event Date"
+                android:layout_marginStart="10dp"
+                android:textSize="17sp"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="5dp"
+                tools:ignore="UselessParent">
+
+
+                <TextView
+                    android:id="@+id/st_dt"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:text="START DATE"
+                    android:background="@color/white"
+                    android:textColor="@color/green_900"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:elevation="10dp"
+                    tools:ignore="Suspicious0dp" />
+
+
+
+                <TextView
+                    android:id="@+id/ed_dt"
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:text="END DATE"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:textColor="@color/red_900"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:elevation="10dp"
+                    />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sl_line"
+                android:text="Address"
+                android:layout_marginStart="10dp"
+                android:textSize="17sp"
+                />
+            <EditText
+                android:id="@+id/add_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                />
+            <Button
+                android:id="@+id/submit_event"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:background="@color/orange_500"
+                android:layout_margin="15sp"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

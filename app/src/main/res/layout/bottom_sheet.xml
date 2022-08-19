@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/order_sts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Procced to processing"
+        android:background="@drawable/white_oval"
+        android:layout_margin="10sp"
+        android:textColor="@color/orange_500"
+        />
+    <Button
+        android:id="@+id/cancel_btm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel Order"
+        android:layout_below="@+id/order_sts"
+        android:background="@drawable/white_oval"
+        android:layout_margin="10sp"
+        android:textColor="@color/red_400"
+        />
+
+</RelativeLayout>

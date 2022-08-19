@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@+id/img_feed"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:id="@+id/feed_ttl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tittle"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+
+            />
+        <TextView
+            android:id="@+id/feed_lbl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Label"
+            android:layout_marginStart="10sp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/orange_300"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="8dp"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            />
+      <TextView
+          android:id="@+id/feed_descrip"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Description"
+          android:textSize="16sp"
+          android:layout_margin="10sp"
+          />
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="10sp"
+             android:background="@drawable/white_oval"
+             android:elevation="5dp"
+             >
+
+             <de.hdodenhof.circleimageview.CircleImageView
+                 android:id="@+id/ven_logo"
+                 android:layout_width="60dp"
+                 android:layout_height="60dp"
+                 android:layout_centerHorizontal="true"
+                 android:layout_marginTop="10dp"
+                 />
+             <TextView
+                 android:layout_marginTop="7dp"
+                 android:id="@+id/ven_nm"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:layout_below="@id/ven_logo"
+                 android:textStyle="bold"
+                 android:textSize="17sp"
+                 android:textColor="@color/black"
+                 />
+             <TextView
+                 android:id="@+id/feed_ven_address"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@id/ven_nm"
+                 android:layout_centerHorizontal="true"
+                 android:text="address"
+                 android:layout_margin="10sp"
+                 android:textSize="16sp"
+                 android:textColor="@color/black"
+                 android:textAlignment="center"
+                 android:gravity="center"
+                 />
+         </RelativeLayout>
+
+<Button
+    android:id="@+id/feed_hst_btn"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/orange_300"
+    android:layout_margin="10sp"
+    android:text="View My Profile"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

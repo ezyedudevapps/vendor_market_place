@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- font sizes -->
+    <dimen name="font_xxxlarger">32sp</dimen>
+    <dimen name="font_xxlarger">28sp</dimen>
+    <dimen name="font_xlarger">24sp</dimen>
+    <dimen name="font_larger">20sp</dimen>
+    <dimen name="font_large">18sp</dimen>
+    <dimen name="font_medium">16sp</dimen>
+    <dimen name="font_normal">14sp</dimen>
+    <dimen name="font_small">12sp</dimen>
+    <dimen name="font_tiny">10sp</dimen>
+
+    <!-- typical spacing between two views -->
+    <dimen name="spacing_huge">40dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_normal">14dp</dimen>
+    <dimen name="spacing_small">10dp</dimen>
+    <dimen name="spacing_tiny">4dp</dimen>
+
+    <!-- typical sizes of views -->
+    <dimen name="button_height_tall">60dp</dimen>
+    <dimen name="button_height_normal">40dp</dimen>
+    <dimen name="button_height_short">32dp</dimen>
+
+    <!--MARGIN & PADDING-->
+    <dimen name="space_quarter">2dp</dimen>
+    <dimen name="space_half">4dp</dimen>
+    <dimen name="space_half_minus">-4dp</dimen>
+    <dimen name="space">8dp</dimen>
+    <dimen name="space_minus">-8dp</dimen>
+    <dimen name="space_double">16dp</dimen>
+    <dimen name="space_double_minus">-16dp</dimen>
+    <dimen name="space_qtriple">20dp</dimen>
+    <dimen name="space_qtriple_minus">-20dp</dimen>
+    <dimen name="space_triple">24dp</dimen>
+    <dimen name="space_triple_minus">-24dp</dimen>
+    <dimen name="space_quadruple">32dp</dimen>
+    <dimen name="space_xtra_half">40dp</dimen>
+    <dimen name="space_xtra">48dp</dimen>
+    <dimen name="space_xxtra">72dp</dimen>
+    <dimen name="space_xxxtra">96dp</dimen>
+    <dimen name="space_xtra_minus">-48dp</dimen>
+
+    <!--RADIUS-->
+    <dimen name="radius_small">2dp</dimen>
+
+    <!--Width Image-->
+    <dimen name="extra_small_width">30dp</dimen>
+    <dimen name="small_width">45dp</dimen>
+    <dimen name="medium_width">75dp</dimen>
+    <dimen name="large_width">100dp</dimen>
+    <dimen name="extra_large_width">160dp</dimen>
+    <dimen name="super_large_width">250dp</dimen>
+
+    <!--Height Image-->
+    <dimen name="extra_small_height">30dp</dimen>
+    <dimen name="small_height">45dp</dimen>
+    <dimen name="medium_height">75dp</dimen>
+    <dimen name="large_height">100dp</dimen>
+    <dimen name="extra_large_height">160dp</dimen>
+    <dimen name="super_large_height">250dp</dimen>
+
+    <!--ICON-->
+    <dimen name="icon_small">15dp</dimen>
+    <dimen name="icon_normal">25dp</dimen>
+    <dimen name="icon_big">35dp</dimen>
+    <dimen name="icon_extra_big">50dp</dimen>
+
+    <!--Card View-->
+    <dimen name="card_corner_radius">5dp</dimen>
+    <dimen name="card_elevation">5dp</dimen>
+
+    <!--RADIUS-->
+    <dimen name="default_cardview_radius">14dp</dimen>
+    <dimen name="default_header_round_radius">36dp</dimen>
+    <dimen name="default_header_top_offset">-42dp</dimen>
+    <dimen name="normal_header_height">230dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--DEFAULT ANDROID ATTRIBUTES OVERRIDE-->
+    <dimen name="design_navigation_icon_size" tools:override="true">36dp</dimen>
+    <dimen name="design_navigation_icon_padding" tools:override="true">@dimen/space_double</dimen>
+
+
+    <!--PADDING & MARGIN-->
+    <dimen name="padding_margin_very_thin">2dp</dimen>
+    <dimen name="padding_margin_thin">4dp</dimen>
+    <dimen name="padding_margin_thin_medium">6dp</dimen>
+    <dimen name="padding_margin_normal_thin">8dp</dimen>
+    <dimen name="padding_margin_normal_less">10dp</dimen>
+    <dimen name="padding_margin_normal">16dp</dimen>
+    <dimen name="padding_margin_normal_thin_medium">20dp</dimen>
+    <dimen name="paading_margin_normal_thin_more_medium">21dp</dimen>
+    <dimen name="padding_margin_normal_medium">24dp</dimen>
+    <dimen name="padding_margin_normal_more_medium">29dp</dimen>
+    <dimen name="padding_margin_medium">32dp</dimen>
+    <dimen name="padding_margin_medium_thick">40dp</dimen>
+    <dimen name="padding_margin_thick">48dp</dimen>
+    <dimen name="padding_margin_extra_thick">56dp</dimen>
+    <dimen name="padding_margin_super_thick">72dp</dimen>
+    <dimen name="padding_margin_super_very_thick">116dp</dimen>
+    <dimen name="padding_margin_super_very_extra_thick">176dp</dimen>
+    <dimen name="padding_margin_super_very_very_extra_thick">236dp</dimen>
+
+
+
+
+</resources>

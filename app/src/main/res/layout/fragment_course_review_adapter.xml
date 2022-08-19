@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relative_course"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/white_oval"
+        android:layout_margin="10sp"
+        android:elevation="5dp"
+        >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_logo"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:elevation="5dp"
+            />
+
+        <TextView
+            android:id="@+id/tittle_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_logo"
+            android:text="Tittle"
+            android:layout_marginTop="15sp"
+            android:layout_marginStart="20sp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/product_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tittle_product"
+            android:layout_toRightOf="@id/img_logo"
+            android:text="Start Date"
+            android:layout_marginTop="5sp"
+            android:layout_marginStart="20sp"
+            android:textSize="13sp"
+            android:textColor="@color/orange_500"
+            android:textStyle="normal"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

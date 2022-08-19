@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.Product_preview_fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyc_product_preview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <ImageView
+        android:id="@+id/i11"
+        android:layout_width="190sp"
+        android:visibility="gone"
+        android:layout_height="190sp"
+        android:src="@drawable/empty_history"
+        android:layout_marginTop="50sp"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/t11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Course Found"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="244dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+</FrameLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/rel_chat_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_rec"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/empty_profile_picture"
+            />
+        <RelativeLayout
+            android:id="@+id/text_rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_rec"
+            android:layout_marginStart="20sp"
+            android:layout_marginEnd="10sp"
+            android:layout_marginTop="20sp"
+            >
+            <TextView
+                android:id="@+id/chat_ven_name"
+                android:layout_width="170sp"
+                android:layout_height="25sp"
+                android:textStyle="bold"
+                android:text="Tittle"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/time_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7:00 AM"
+                android:layout_alignParentEnd="true"
+                android:textSize="14sp"
+                android:layout_marginEnd="10sp"
+                android:textStyle="italic"
+                />
+            <TextView
+                android:id="@+id/count_unread"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_marginTop="5sp"
+                android:background="@drawable/blue_circle"
+                android:layout_below="@id/time_txt"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15sp"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textAlignment="center"
+                />
+
+
+            <TextView
+                android:id="@+id/txt_messages"
+                android:layout_width="210sp"
+                android:layout_height="22sp"
+                android:layout_below="@id/chat_ven_name"
+                android:layout_marginTop="5sp"
+                android:text="Hello this is student"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/strt_ln"
+            android:layout_width="match_parent"
+            android:layout_height="25sp"
+            android:src="@drawable/straight_line"
+            android:layout_below="@id/text_rel"
+            android:layout_marginTop="10sp"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

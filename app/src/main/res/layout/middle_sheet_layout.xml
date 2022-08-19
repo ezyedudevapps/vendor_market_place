@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="16dp"
+    >
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Please Select Here"
+    android:textSize="17sp"
+    android:textColor="@color/black"
+    />
+    <Button
+        android:id="@+id/edit_my_pf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit My Profile"
+        android:background="@drawable/white_oval"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/orange_500"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        />
+    <Button
+        android:id="@+id/edit_insti_pf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Institution Profile"
+        android:background="@drawable/white_oval"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/orange_500"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginBottom="10dp"
+        />
+</LinearLayout>

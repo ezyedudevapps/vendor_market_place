@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:background="@drawable/white_oval"
+        android:layout_margin="10sp"
+        android:elevation="7dp"
+        >
+        <TextView
+            android:id="@+id/order_payment_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold"
+            android:background="@color/grey_200"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/payment_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_below="@id/order_payment_id"
+            android:textStyle="bold"
+            android:background="@color/grey_200"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/payment_date"
+            android:layout_marginEnd="10dp"
+            android:background="@color/grey_200"
+            android:textStyle="bold"
+            android:textColor="@color/orange_500"
+            android:textSize="14sp"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

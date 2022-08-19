@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit_Users_profile">
+
+    <TextView
+        android:id="@+id/my_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Profile"
+        android:textStyle="bold"
+        android:textColor="@color/orange_500"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        />
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:layout_below="@id/my_txt"
+    android:src="@drawable/straight_line"
+    />
+
+    <RelativeLayout
+        android:id="@+id/img_relative"
+        android:layout_width="170dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+    >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_to_update"
+            android:layout_width="120sp"
+            android:layout_height="120sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+        <ImageView
+            android:id="@+id/img_pk"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/gpk"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="12dp"
+            />
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/straight_line"
+        android:layout_below="@id/img_relative"
+        />
+    <EditText
+        android:id="@+id/user_name_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:layout_below="@id/line"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <EditText
+        android:id="@+id/name_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_below="@id/user_name_update"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+    <EditText
+        android:id="@+id/email_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-Mail"
+        android:layout_below="@id/name_update"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+    <EditText
+        android:id="@+id/phone_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone"
+        android:layout_below="@id/email_update"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+    <Button
+        android:id="@+id/update_user"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/phone_update"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/orange_new_oval"
+        android:textColor="@color/white"
+        android:padding="6dp"
+        android:elevation="5dp"
+        android:textStyle="bold"
+        android:text="Update Profile"
+        />
+
+</RelativeLayout>
